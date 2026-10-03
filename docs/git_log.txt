@@ -1,0 +1,6 @@
+*   ade0630 fix: resolve merge conflict in README.md
+|\  
+| * a5dc2ac docs: update dev readme
+* | 1f5e258 docs: add initial readme
+|/  
+* 59ade96 chore: init project
