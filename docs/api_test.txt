@@ -1,0 +1,59 @@
+=== 1. Check Health ===
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Sat, 03 Oct 2026 12:54:16 GMT
+Content-Type: application/json
+Content-Length: 39
+Connection: close
+
+{"status":"ok","student":"2412111014"}
+
+=== 2. Get All Students ===
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Sat, 03 Oct 2026 12:54:16 GMT
+Content-Type: application/json
+Content-Length: 394
+Connection: close
+
+[{"diem":8.5,"ho_ten":"Nguyen Hoang Cong","id":1,"lop":"CNTT02","mssv":"2412111014"},{"diem":9.0,"ho_ten":"Tran Thi B","id":2,"lop":"CNTT01","mssv":"2412111015"},{"diem":7.0,"ho_ten":"Le Van C","id":3,"lop":"CNTT02","mssv":"2412111016"},{"diem":6.5,"ho_ten":"Pham Thi D","id":4,"lop":"CNTT02","mssv":"2412111017"},{"diem":10.0,"ho_ten":"Hoang Van E","id":5,"lop":"CNTT01","mssv":"2412111018"}]
+
+=== 3. Filter by Class (CNTT02) ===
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Sat, 03 Oct 2026 12:54:16 GMT
+Content-Type: application/json
+Content-Length: 238
+Connection: close
+
+[{"diem":8.5,"ho_ten":"Nguyen Hoang Cong","id":1,"lop":"CNTT02","mssv":"2412111014"},{"diem":7.0,"ho_ten":"Le Van C","id":3,"lop":"CNTT02","mssv":"2412111016"},{"diem":6.5,"ho_ten":"Pham Thi D","id":4,"lop":"CNTT02","mssv":"2412111017"}]
+
+=== 4. Get Student by ID (1) ===
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Sat, 03 Oct 2026 12:54:16 GMT
+Content-Type: application/json
+Content-Length: 84
+Connection: close
+
+{"diem":8.5,"ho_ten":"Nguyen Hoang Cong","id":1,"lop":"CNTT02","mssv":"2412111014"}
+
+=== 5. POST Student Invalid (Score = 11 > 10) ===
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Sat, 03 Oct 2026 12:54:16 GMT
+Content-Type: application/json
+Content-Length: 42
+Connection: close
+
+{"error":"Diem must be between 0 and 10"}
+
+=== 6. POST Student Valid ===
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.1.5 Python/3.14.4
+Date: Sat, 03 Oct 2026 12:54:16 GMT
+Content-Type: application/json
+Content-Length: 80
+Connection: close
+
+{"diem":8.0,"ho_ten":"Nguyen Van Test","id":6,"lop":"CNTT02","mssv":"24129999"}

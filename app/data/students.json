@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "mssv": "2412111014",
+    "ho_ten": "Nguyen Hoang Cong",
+    "lop": "CNTT02",
+    "diem": 8.5
+  },
+  {
+    "id": 2,
+    "mssv": "2412111015",
+    "ho_ten": "Tran Thi B",
+    "lop": "CNTT01",
+    "diem": 9.0
+  },
+  {
+    "id": 3,
+    "mssv": "2412111016",
+    "ho_ten": "Le Van C",
+    "lop": "CNTT02",
+    "diem": 7.0
+  },
+  {
+    "id": 4,
+    "mssv": "2412111017",
+    "ho_ten": "Pham Thi D",
+    "lop": "CNTT02",
+    "diem": 6.5
+  },
+  {
+    "id": 5,
+    "mssv": "2412111018",
+    "ho_ten": "Hoang Van E",
+    "lop": "CNTT01",
+    "diem": 10.0
+  },
+  {
+    "id": 6,
+    "mssv": "24129999",
+    "ho_ten": "Nguyen Van Test",
+    "lop": "CNTT02",
+    "diem": 8.0
+  },
+  {
+    "id": 7,
+    "mssv": "24128888",
+    "ho_ten": "Persistence Student",
+    "lop": "CNTT02",
+    "diem": 9.5
+  }
+]
